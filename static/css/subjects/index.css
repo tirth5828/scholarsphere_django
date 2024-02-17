@@ -1,0 +1,498 @@
+.arrow-button-icon {
+  height: 26px;
+  width: 26px;
+  position: relative;
+}
+.subjects {
+  height: 39px;
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.edit-button-icon {
+  height: 42px;
+  width: 42px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 42px;
+}
+.arrow-button-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.fi-sr-square-root-icon {
+  position: absolute;
+  top: 28.2px;
+  left: 28.2px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+}
+.second-square-root-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 39.19px;
+  background-color: rgba(134, 36, 46, 0.15);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.fi-sr-square-root-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 106.6px;
+  position: relative;
+}
+.math {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.biology-frame,
+.math-section {
+  display: flex;
+  justify-content: flex-start;
+}
+.biology-frame {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 28px 0 25px;
+}
+.math-section {
+  width: 107px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-lgi);
+}
+.first-reflector {
+  position: absolute;
+  top: 0;
+  left: -0.2px;
+  border-radius: 39.19px;
+  background-color: rgba(180, 83, 9, 0.15);
+  width: 100%;
+  height: 100%;
+}
+.fi-sr-reflect-icon {
+  position: absolute;
+  top: 28.2px;
+  left: 28px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+  z-index: 1;
+}
+.first-reflector-parent {
+  align-self: stretch;
+  height: 106.6px;
+  position: relative;
+}
+.physics {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.physics-wrapper,
+.technology-frame {
+  display: flex;
+  justify-content: flex-start;
+}
+.physics-wrapper {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 16px 0 12px;
+}
+.technology-frame {
+  width: 107px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-lgi);
+}
+.fi-sr-palette {
+  position: absolute;
+  top: calc(50% - 25.3px);
+  left: calc(50% - 24.9px);
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+}
+.rectangle-medicine {
+  position: absolute;
+  top: 0;
+  left: 0.4px;
+  border-radius: 39.19px;
+  background-color: rgba(39, 72, 127, 0.15);
+  box-shadow: 0 6.3px 6.27px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.rectangle-english-icon {
+  position: absolute;
+  top: 28.2px;
+  left: 28.8px;
+  width: 50.2px;
+  height: 50.2px;
+  z-index: 2;
+}
+.color-palette-holder {
+  align-self: stretch;
+  height: 107px;
+  position: relative;
+}
+.arts {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.arts-and-economy-frame {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.subframe-a {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.fi-sr-eye-dropper-icon {
+  position: absolute;
+  top: 28.5px;
+  left: 28px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+}
+.frame-child {
+  position: absolute;
+  top: 0.3px;
+  left: -0.2px;
+  border-radius: 39.19px;
+  background-color: rgba(70, 189, 132, 0.15);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.fi-sr-eye-dropper-parent {
+  align-self: stretch;
+  height: 106.6px;
+  position: relative;
+}
+.biology {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.frame-group {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.frame-item {
+  position: absolute;
+  top: 0.3px;
+  left: -0.2px;
+  border-radius: 39.19px;
+  background-color: rgba(42, 113, 79, 0.15);
+  width: 100%;
+  height: 100%;
+}
+.fi-sr-screen-icon {
+  position: absolute;
+  top: 28.5px;
+  left: 28px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+  z-index: 1;
+}
+.rectangle-parent {
+  width: 106.6px;
+  height: 106.6px;
+  position: relative;
+}
+.technology {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.frame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.frame-inner {
+  width: 106.6px;
+  height: 106.6px;
+  position: relative;
+}
+.economy {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.frame-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.subframe-a1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.outer-frame {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-48xl);
+}
+.frame-parent,
+.outer-frame,
+.outer-frame-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.outer-frame-wrapper {
+  width: 492px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-xl-4);
+  color: var(--neutral-900);
+}
+.frame-parent {
+  width: 1230px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-55xl);
+  text-align: left;
+  font-size: 26px;
+  color: #000;
+  font-family: var(--font-poppins);
+}
+.rectangle-div {
+  position: absolute;
+  top: -0.4px;
+  left: -0.2px;
+  border-radius: 39.19px;
+  background-color: rgba(65, 120, 212, 0.15);
+  width: 100%;
+  height: 100%;
+}
+.fi-sr-book-alt-icon {
+  position: absolute;
+  top: 27.8px;
+  left: 28px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+  z-index: 1;
+}
+.rectangle-group {
+  align-self: stretch;
+  height: 106.6px;
+  position: relative;
+}
+.english {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.group-rectangle-bookalt-medici {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.group-child {
+  height: 106.6px;
+  width: 106.6px;
+  position: relative;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 4px;
+}
+.geography {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.group-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.frame-child1 {
+  position: absolute;
+  top: -0.4px;
+  left: 0;
+  border-radius: 39.19px;
+  background-color: rgba(82, 182, 223, 0.15);
+  width: 100%;
+  height: 100%;
+}
+.fi-sr-medicine-icon {
+  position: absolute;
+  top: 27.8px;
+  left: 28.2px;
+  width: 50.2px;
+  height: 50.2px;
+  overflow: hidden;
+  z-index: 1;
+}
+.rectangle-container {
+  align-self: stretch;
+  height: 106.6px;
+  position: relative;
+}
+.chemical {
+  position: relative;
+  letter-spacing: 0.31px;
+  line-height: 34.49px;
+  font-weight: 500;
+}
+.group-rectangle-bookalt-medici1 {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.group-rectangle-bookalt-medici-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.parent-frame,
+.subjects1 {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.parent-frame {
+  width: 492px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  max-width: 100%;
+}
+.subjects1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 20px 165px 36px;
+  gap: var(--gap-48xl);
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-xl-4);
+  color: var(--neutral-900);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 600px) {
+  .outer-frame {
+    gap: var(--gap-48xl);
+  }
+  .frame-parent {
+    gap: var(--gap-55xl);
+  }
+  .subjects1 {
+    gap: var(--gap-48xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .subjects {
+    font-size: 21px;
+    line-height: 19px;
+  }
+  .arrow-button-parent {
+    flex-wrap: wrap;
+  }
+  .arts,
+  .math,
+  .physics {
+    font-size: var(--font-size-base);
+    line-height: 28px;
+  }
+  .subframe-a {
+    flex-wrap: wrap;
+  }
+  .biology,
+  .economy,
+  .technology {
+    font-size: var(--font-size-base);
+    line-height: 28px;
+  }
+  .subframe-a1 {
+    flex-wrap: wrap;
+  }
+  .frame-parent {
+    gap: var(--gap-55xl);
+  }
+  .chemical,
+  .english,
+  .geography {
+    font-size: var(--font-size-base);
+    line-height: 28px;
+  }
+  .group-rectangle-bookalt-medici-parent {
+    flex-wrap: wrap;
+  }
+  .subjects1 {
+    gap: var(--gap-48xl);
+  }
+}

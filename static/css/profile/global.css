@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-6xl-4: 25.4px;
+  --font-size-2xl: 21px;
+
+  /* Colors */
+  --color-darkslategray: #404040;
+  --neutral-500: #64748b;
+  --neutral-900: #0f172a;
+  --secondary-100: #dcf0f9;
+}

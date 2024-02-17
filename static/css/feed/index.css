@@ -1,0 +1,697 @@
+.arrow-button-icon {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+}
+.math {
+  margin: 0;
+  width: 79px;
+  height: 39px;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.teacher-john-doe {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.homework-frame,
+.project-frame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.project-frame {
+  flex-direction: column;
+  gap: 2px;
+}
+.homework-frame {
+  align-self: stretch;
+  flex-direction: row;
+}
+.homework-1,
+.project,
+.quiz-1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.assignment-frames {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xl);
+}
+.due-feb-20,
+.due-feb-201,
+.due-mar-5 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.assignment-frames1,
+.input-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xl);
+}
+.input-frame {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+}
+.f-r-a-m-e,
+.quiz-frame {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.quiz-frame {
+  width: 450px;
+  border-radius: 34.34px;
+  border: 3.4px solid var(--neutral-300);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-11xl) var(--padding-7xl) var(--padding-11xl) 25px;
+  gap: var(--gap-28xl);
+}
+.f-r-a-m-e {
+  width: 548px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 14px 0 0;
+  position: relative;
+  min-width: 548px;
+}
+.assignments {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.assignments-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.assignment-1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.due-feb-29 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.projects-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.assignment-2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.due-feb-15 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.input-frame-projects,
+.projects-quiz1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-frame-projects {
+  gap: var(--gap-3xl);
+}
+.upload {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) var(--padding-7xl) var(--padding-6xs)
+    var(--padding-8xl);
+  background-color: transparent;
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: var(--color-darkslategray-200);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+}
+.uploaded {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button1 {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) 6px var(--padding-6xs);
+  background-color: var(--color-royalblue);
+  align-self: stretch;
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
+  background-color: var(--color-dodgerblue);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+}
+.uploadbutton {
+  width: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xl);
+}
+.uploaded-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+}
+.input,
+.subframes {
+  display: flex;
+  max-width: 100%;
+}
+.input {
+  width: 450px;
+  border-radius: 34.34px;
+  border: 3.4px solid var(--neutral-300);
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-24xl) var(--padding-9xl) var(--padding-25xl)
+    var(--padding-8xl);
+  gap: var(--gap-56xl);
+  min-width: 450px;
+}
+.subframes {
+  width: 1115px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-black);
+  font-family: var(--very-small-regular);
+}
+.projects {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.projects-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.project-1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.due-feb-291 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.projectquizzes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.project-2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.due-feb-151 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.duedateframes,
+.submitframes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.duedateframes {
+  gap: var(--gap-3xl);
+}
+.submit {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) var(--padding-7xl) var(--padding-6xs)
+    var(--padding-8xl);
+  background-color: transparent;
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
+  background-color: var(--color-darkslategray-200);
+}
+.submitted {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button3 {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) 15px var(--padding-6xs) 16px;
+  background-color: var(--color-royalblue);
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button3:hover,
+.button4:hover,
+.button5:hover {
+  background-color: var(--color-dodgerblue);
+}
+.buttonssubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xl);
+}
+.input1,
+.quizassignments {
+  display: flex;
+  align-items: center;
+}
+.quizassignments {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+}
+.input1 {
+  width: 450px;
+  border-radius: 34.34px;
+  border: 3.4px solid var(--neutral-300);
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-24xl) var(--padding-9xl) var(--padding-25xl)
+    var(--padding-8xl);
+  gap: var(--gap-56xl);
+  max-width: 100%;
+}
+.quiz {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.quiz-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quiz-11 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.end-feb-29 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+}
+.quiz-1-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quiz-2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.end-feb-15 {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  color: var(--neutral-500);
+  margin-top: -1px;
+}
+.frame-group,
+.quiz-2-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-group {
+  gap: var(--gap-3xl);
+}
+.ended {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button4 {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) var(--padding-10xl) var(--padding-6xs)
+    var(--padding-11xl);
+  background-color: transparent;
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button4:hover,
+.button5:hover {
+  background-color: var(--color-darkslategray-200);
+}
+.start {
+  position: relative;
+  font-size: var(--very-small-regular-size);
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  font-family: var(--very-small-regular);
+  color: var(--color-black);
+  text-align: left;
+}
+.button5 {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: var(--padding-5xs) 34px var(--padding-6xs) 35px;
+  background-color: var(--color-royalblue);
+  border-radius: var(--br-13xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button5:hover {
+  background-color: var(--color-dodgerblue);
+}
+.button-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xl);
+}
+.frame-parent,
+.input2 {
+  display: flex;
+  align-items: center;
+}
+.frame-parent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+}
+.input2 {
+  width: 450px;
+  border-radius: 34.34px;
+  border: 3.4px solid var(--neutral-300);
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-24xl) var(--padding-9xl) 45px var(--padding-8xl);
+  gap: var(--gap-56xl);
+  max-width: 100%;
+}
+.framesprojects,
+.projectframes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.framesprojects {
+  width: 1017px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.projectframes {
+  width: 1115px;
+  justify-content: flex-end;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-black);
+  font-family: var(--very-small-regular);
+}
+.subjects3 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 128px 119px 133px 20px;
+  box-sizing: border-box;
+  gap: var(--gap-130xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .f-r-a-m-e,
+  .input {
+    flex: 1;
+  }
+  .subframes {
+    flex-wrap: wrap;
+  }
+  .subjects3 {
+    gap: var(--gap-130xl);
+    padding-right: 59px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .framesprojects {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .f-r-a-m-e,
+  .input {
+    min-width: 100%;
+  }
+  .subjects3 {
+    gap: var(--gap-130xl);
+    padding-right: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .math {
+    font-size: var(--font-size-2xl);
+    line-height: 19px;
+  }
+  .due-feb-20,
+  .due-feb-201,
+  .due-mar-5,
+  .homework-1,
+  .project,
+  .quiz-1 {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+  .input-frame {
+    flex-wrap: wrap;
+  }
+  .quiz-frame {
+    gap: var(--gap-28xl);
+  }
+  .assignments {
+    font-size: var(--font-size-2xl);
+    line-height: 19px;
+  }
+  .assignment-1,
+  .assignment-2 {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+  .uploaded-frame {
+    flex-wrap: wrap;
+  }
+  .input {
+    gap: var(--gap-56xl);
+  }
+  .projects {
+    font-size: var(--font-size-2xl);
+    line-height: 19px;
+  }
+  .project-1,
+  .project-2 {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+  .quizassignments {
+    flex-wrap: wrap;
+  }
+  .input1 {
+    gap: var(--gap-56xl);
+  }
+  .quiz {
+    font-size: var(--font-size-2xl);
+    line-height: 19px;
+  }
+  .quiz-11,
+  .quiz-2 {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+  .frame-parent {
+    flex-wrap: wrap;
+  }
+  .input2 {
+    gap: var(--gap-56xl);
+  }
+  .subjects3 {
+    gap: var(--gap-130xl);
+  }
+}

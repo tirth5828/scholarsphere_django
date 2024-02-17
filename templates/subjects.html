@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/subjects/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/subjects/index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+    />
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+  </head>
+  <body>
+    <div class="subjects1">
+      <section class="frame-parent">
+        <div class="arrow-button-parent">
+          <a href="{% url 'home' username %}">
+            <img
+              class="arrow-button-icon"
+              loading="eager"
+              alt=""
+              src="{% static 'public/arrowbutton.svg' %}"
+            />
+          </a>
+
+          <div class="subjects">Subjects</div>
+          <a href="#edit-link">
+            <img
+              class="edit-button-icon"
+              alt=""
+              src="{% static 'public/edit-button.svg' %}"
+            />
+          </a>
+        </div>
+        <div class="outer-frame-wrapper">
+          <div class="outer-frame">
+            <div class="subframe-a">
+              <a href="{% url 'feed' username %}">
+              <div class="math-section">
+                  <button class="fi-sr-square-root-parent">
+                    
+                    <img
+                      class="fi-sr-square-root-icon"
+                      alt=""
+                      src="{% static 'public/fisrsquareroot.svg' %}"
+                    />
+                    
+                    <div class="second-square-root-input"></div>
+                  </button>
+                <div class="biology-frame">
+                  <div class="math">Math</div>
+                </div>
+              
+              </div>
+            </a>
+              <div class="technology-frame">
+                <div class="first-reflector-parent">
+                  <div class="first-reflector"></div>
+                  <img
+                    class="fi-sr-reflect-icon"
+                    loading="eager"
+                    alt=""
+                    src="{% static 'public/fisrreflect.svg' %}"
+                  />
+                </div>
+                <div class="physics-wrapper">
+                  <div class="physics">Physics</div>
+                </div>
+              </div>
+              <div class="arts-and-economy-frame">
+                <div class="color-palette-holder">
+                  <div class="fi-sr-palette"></div>
+                  <div class="rectangle-medicine"></div>
+                  <img
+                    class="rectangle-english-icon"
+                    loading="eager"
+                    alt=""
+                    src="{% static 'public/vector.svg' %}"
+                  />
+                </div>
+                <div class="arts">Arts</div>
+              </div>
+            </div>
+            <div class="subframe-a1">
+              <div class="frame-group">
+                <div class="fi-sr-eye-dropper-parent">
+                  <img
+                    class="fi-sr-eye-dropper-icon"
+                    alt=""
+                    src="{% static 'public/fisreyedropper.svg' %}"
+                  />
+
+                  <div class="frame-child"></div>
+                </div>
+                <div class="biology">Biology</div>
+              </div>
+              <div class="frame-container">
+                <div class="rectangle-parent">
+                  <div class="frame-item"></div>
+                  <img
+                    class="fi-sr-screen-icon"
+                    alt=""
+                    src="{% static 'public/fisrscreen.svg' %}"
+                  />
+                </div>
+                <div class="technology">Technology</div>
+              </div>
+              <div class="frame-div">
+                <img
+                  class="frame-inner"
+                  alt=""
+                  src="{% static 'public/group-5251.svg' %}"
+                />
+
+                <div class="economy">Economy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="parent-frame">
+        <div class="group-rectangle-bookalt-medici-parent">
+          <div class="group-rectangle-bookalt-medici">
+            <div class="rectangle-group">
+              <div class="rectangle-div"></div>
+              <img
+                class="fi-sr-book-alt-icon"
+                loading="eager"
+                alt=""
+                src="{% static 'public/fisrbookalt.svg' %}"
+              />
+            </div>
+            <div class="english">English</div>
+          </div>
+          <div class="group-parent">
+            <div class="group">
+              <img
+                class="group-child"
+                loading="eager"
+                alt=""
+                src="{% static 'public/group-5252.svg' %}"
+              />
+            </div>
+            <div class="geography">Geography</div>
+          </div>
+          <div class="group-rectangle-bookalt-medici1">
+            <div class="rectangle-container">
+              <div class="frame-child1"></div>
+              <img
+                class="fi-sr-medicine-icon"
+                loading="eager"
+                alt=""
+                src="{% static 'public/fisrmedicine.svg' %}"
+              />
+            </div>
+            <div class="chemical">Chemical</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

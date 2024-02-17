@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/feed/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/feed/index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+  </head>
+  <body>
+    <div class="subjects3">
+      <section class="subframes">
+        <div class="f-r-a-m-e">
+          <a href="{% url 'home' username %}"> 
+            
+          <img
+            class="arrow-button-icon"
+            loading="eager"
+            alt=""
+            src = "{% static 'public/arrowbutton.svg' %}"
+          />
+          </a>
+
+          <div class="quiz-frame">
+            <div class="homework-frame">
+              <div class="project-frame">
+                <h1 class="math">Math</h1>
+                <div class="teacher-john-doe">Teacher: John Doe</div>
+              </div>
+            </div>
+            <div class="input-frame">
+              <div class="assignment-frames">
+                <h2 class="homework-1">Homework 1</h2>
+                <h2 class="quiz-1">Quiz 1</h2>
+                <h2 class="project">Project</h2>
+              </div>
+              <div class="assignment-frames1">
+                <h2 class="due-feb-20">Due: Feb 20</h2>
+                <h2 class="due-feb-201">Due: Feb 20</h2>
+                <h2 class="due-mar-5">Due: Mar 5</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input">
+          <div class="assignments-text">
+            <h1 class="assignments">Assignments</h1>
+          </div>
+          <div class="uploaded-frame">
+            <div class="input-frame-projects">
+              <div class="projects-quiz">
+                <h2 class="assignment-1">Assignment 1</h2>
+                <div class="due-feb-29">Due: Feb 29</div>
+              </div>
+              <div class="projects-quiz1">
+                <h2 class="assignment-2">Assignment 2</h2>
+                <div class="due-feb-15">Due: Feb 15</div>
+              </div>
+            </div>
+            <div class="uploadbutton">
+              <button class="button">
+                <div class="upload">Upload</div>
+              </button>
+              <button class="button1">
+                <div class="uploaded">Uploaded</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projectframes">
+        <div class="framesprojects">
+          <div class="input1">
+            <div class="projects-wrapper">
+              <h1 class="projects">Projects</h1>
+            </div>
+            <div class="quizassignments">
+              <div class="duedateframes">
+                <div class="projectquizzes">
+                  <h2 class="project-1">Project 1</h2>
+                  <div class="due-feb-291">Due: Feb 29</div>
+                </div>
+                <div class="submitframes">
+                  <h2 class="project-2">Project 2</h2>
+                  <div class="due-feb-151">Due: Feb 15</div>
+                </div>
+              </div>
+              <div class="buttonssubmit">
+                <button class="button2">
+                  <div class="submit">Submit</div>
+                </button>
+                <button class="button3">
+                  <div class="submitted">Submitted</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="input2">
+            <div class="quiz-wrapper">
+              <h1 class="quiz">Quiz</h1>
+            </div>
+            <div class="frame-parent">
+              <div class="frame-group">
+                <div class="quiz-1-parent">
+                  <h2 class="quiz-11">Quiz 1</h2>
+                  <div class="end-feb-29">End: Feb 29</div>
+                </div>
+                <div class="quiz-2-parent">
+                  <h2 class="quiz-2">Quiz 2</h2>
+                  <div class="end-feb-15">End: Feb 15</div>
+                </div>
+              </div>
+              <div class="button-parent">
+                <button class="button4">
+                  <div class="ended">Ended</div>
+                </button>
+                <button class="button5">
+                  <div class="start">Start</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+.profil-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--secondary-100);
+  width: 41px;
+  height: 41px;
+}
+.fi-rr-user-icon {
+  position: absolute;
+  top: 10.25px;
+  left: 10.25px;
+  width: 20.5px;
+  height: 20.5px;
+  overflow: hidden;
+}
+.edit-profile {
+  position: absolute;
+  top: 8.2px;
+  left: 55.35px;
+  letter-spacing: 0.2px;
+  line-height: 25.63px;
+  font-weight: 500;
+}
+.fi-rr-angle-small-right-icon {
+  position: absolute;
+  top: 12.3px;
+  left: 318.77px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.button,
+.profil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 338.77px;
+  height: 41px;
+}
+.button {
+  top: 626px;
+  left: 552px;
+}
+.image-icon {
+  top: 337px;
+  left: 680px;
+  width: 79px;
+  height: 79px;
+}
+.image-icon,
+.name,
+.welcome {
+  position: absolute;
+}
+.name {
+  top: 35.28px;
+  left: 13.66px;
+  line-height: 32.69px;
+  font-weight: 600;
+}
+.welcome {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-2xl);
+  letter-spacing: 0.27px;
+  line-height: 34.05px;
+  color: var(--neutral-500);
+}
+.name-parent {
+  position: absolute;
+  top: 444px;
+  left: 672px;
+  width: 102px;
+  height: 68.28px;
+  font-size: 24px;
+}
+.button-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #50afde, rgba(255, 255, 255, 0));
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+}
+.scholarsphere {
+  margin: 0;
+  position: absolute;
+  top: 52px;
+  left: 136px;
+  font-size: inherit;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.home-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: 25.38px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-darkslategray);
+  text-align: left;
+  display: inline-block;
+}
+.nav-menu {
+  position: absolute;
+  top: 36px;
+  left: 720px;
+  width: 719px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+}
+.logo-icon {
+  position: absolute;
+  height: 58.59%;
+  width: 5.21%;
+  top: 20.31%;
+  right: 92.22%;
+  bottom: 21.09%;
+  left: 2.57%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.scholarsphere-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 128px;
+  overflow: hidden;
+  font-size: 40px;
+  color: #4178d4;
+}
+.profile {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--neutral-900);
+  font-family: var(--font-poppins);
+}

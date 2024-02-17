@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/calender/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/calender/index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+  </head>
+  <body>
+    <div class="assignment">
+      <div class="title-parent">
+        <div class="title">
+          <div class="all-assigments">All Assigments</div>
+        </div>
+        <div class="calendar">
+          <div class="calendar1">
+            <div class="calendar-child"></div>
+            <div class="s-parent">
+              <div class="s">S</div>
+              <div class="div">1</div>
+              <div class="div1">8</div>
+              <div class="div2">15</div>
+              <div class="div3">22</div>
+              <div class="div4">29</div>
+            </div>
+            <div class="m-parent">
+              <div class="m">M</div>
+              <div class="div5">2</div>
+              <div class="div6">9</div>
+              <div class="div7">16</div>
+              <div class="div8">23</div>
+              <div class="div9">30</div>
+            </div>
+            <div class="t-parent">
+              <div class="s">T</div>
+              <div class="div">3</div>
+              <div class="div1">10</div>
+              <div class="div2">17</div>
+              <div class="div3">24</div>
+              <div class="div4">31</div>
+            </div>
+            <div class="w-parent">
+              <div class="w">W</div>
+              <div class="div15">4</div>
+              <div class="div16">11</div>
+              <div class="div17">18</div>
+              <div class="div18">25</div>
+              <div class="div19">1</div>
+            </div>
+            <div class="t-group">
+              <div class="t1">T</div>
+              <div class="div20">5</div>
+              <div class="div21">12</div>
+              <div class="div22">19</div>
+              <div class="div18">26</div>
+              <div class="div24">2</div>
+            </div>
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <div class="f">F</div>
+              <div class="div25">6</div>
+              <div class="div26">13</div>
+              <div class="div27">20</div>
+              <div class="div28">27</div>
+              <div class="div29">3</div>
+            </div>
+            <div class="s-group">
+              <div class="s1">S</div>
+              <div class="div30">7</div>
+              <div class="div31">14</div>
+              <div class="div17">21</div>
+              <div class="div18">28</div>
+              <div class="div34">4</div>
+            </div>
+          </div>
+          <div class="august">August</div>
+          <div class="arrow">
+            <img
+              class="fi-rr-angle-small-left-icon"
+              alt=""
+              src="{% static 'public/firranglesmallleft.svg' %}" 
+            />
+
+            <img
+              class="fi-rr-angle-small-right-icon"
+              alt=""
+              src="{% static 'public/firranglesmallright.svg' %}" 
+            />
+          </div>
+        </div>
+        <img class="group-icon" alt="" src="{% static 'public/group.svg' %}" />
+
+        <img class="menu-icon" alt="" src="{% static 'public/menu.svg' %}" />
+
+        <div class="assignments">
+          <div class="assignments-child"></div>
+          <div class="task">
+            <div class="assignments1">
+              <div class="doing-personal-tasks">Doing personal tasks</div>
+              <div class="days">3 Days</div>
+              <div class="subject-icons">
+                <div class="subject-icons-child"></div>
+                <img class="boldbook-icon" alt=""  src="{% static 'public/boldbook.svg' %}" />
+              </div>
+              <div class="regularcalendar-parent">
+                <img
+                  class="regularcalendar-icon"
+                  alt=""
+                  src="{% static 'public/regularcalendar.svg' %}"
+                />
+
+                <div class="div35">12/08/2021</div>
+              </div>
+              <div class="assignments-item"></div>
+            </div>
+            <div class="assignments1">
+              <div class="doing-personal-tasks">Doing personal tasks</div>
+              <div class="days">3 Days</div>
+              <div class="subject-icons">
+                <div class="subject-icons-item"></div>
+                <img
+                  class="fi-sr-square-root-icon"
+                  alt=""
+                  src = "{% static 'public/fisrsquareroot.svg' %}"
+                />
+              </div>
+              <div class="regularcalendar-parent">
+                <img
+                  class="regularcalendar-icon"
+                  alt=""
+                  src = "{% static 'public/regularcalendar.svg' %}"
+                />
+
+                <div class="div35">12/08/2021</div>
+              </div>
+              <div class="assignments-item"></div>
+            </div>
+            <div class="assignments3">
+              <div class="doing-personal-tasks">Doing personal tasks</div>
+              <div class="days">3 Days</div>
+              <img
+                class="subject-icons"
+                alt=""
+                src = "{% static 'public/subject-icons.svg' %}"
+              />
+
+              <div class="regularcalendar-parent">
+                <img
+                  class="regularcalendar-icon"
+                  alt=""
+                  src = "{% static 'public/regularcalendar.svg' %}"
+                />
+
+                <div class="div35">12/08/2021</div>
+              </div>
+              <div class="line-div"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scholarsphere-parent">
+        <h1 class="scholarsphere" id="text">ScholarSphere</h1>
+        <div class="nav-menu">
+          <a href="{% url 'home' username %}">  <button class="home-button" id="home">Home</button> </a>
+          <button class="home-button" id="calendar">Calendar</button>
+          <a href="{% url 'profile' username %}"> <button class="home-button" id="profile">Profile</button> </a>
+        </div>
+      </div>
+      <img class="logo-icon" alt=""   src = "{% static 'public/logo@2x.png' %}"/>
+    </div>
+  </body>
+</html>

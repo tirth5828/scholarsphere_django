@@ -1,0 +1,54 @@
+.arrow-button-icon,
+.deaf-mode1 {
+  position: absolute;
+  top: 128px;
+  left: 113px;
+  width: 26px;
+  height: 26px;
+}
+.deaf-mode1 {
+  left: 663px;
+  line-height: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 39px;
+}
+.mic-button-icon {
+  position: absolute;
+  top: 224px;
+  left: 682px;
+  width: 105px;
+  height: 105px;
+  overflow: hidden;
+}
+.deaf-mode,
+.input {
+  font-family: var(--text-small-regular);
+}
+.input {
+  border: 3.4px solid var(--neutral-300);
+  outline: 0;
+  background-color: var(--color-aliceblue);
+  position: absolute;
+  top: 403px;
+  left: 130px;
+  border-radius: 34.34px;
+  box-sizing: border-box;
+  width: 1180px;
+  height: 537px;
+  padding: 40.2109375px 54.9482421875px 410.7890625px;
+  font-size: var(--text-small-regular-size);
+  color: var(--neutral-900);
+}
+.deaf-mode {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 26px;
+  color: #000;
+}

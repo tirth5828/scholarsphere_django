@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-xl-4: 20.4px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --neutral-900: #0f172a;
+
+  /* Gaps */
+  --gap-48xl: 67px;
+  --gap-xl: 20px;
+  --gap-55xl: 74px;
+  --gap-lgi: 19px;
+
+  /* Paddings */
+  --padding-mid: 17px;
+
+  /* Border radiuses */
+  --br-20xl-2: 39.2px;
+}

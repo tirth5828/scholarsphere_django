@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+</head>
+<body>
+    <button id="startRecording">Start Recording</button>
+    <div id="output"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const startRecordingButton = document.getElementById('startRecording');
+            const outputDiv = document.getElementById('output');
+
+            startRecordingButton.addEventListener('click', async () => {
+                try {
+                    const recognition = new window.webkitSpeechRecognition(); // Create SpeechRecognition object
+                    recognition.lang = 'en-US'; // Set language to English (change as needed)
+                    recognition.start(); // Start recording
+
+                    recognition.onresult = (event) => {
+                        const transcript = event.results[0][0].transcript; // Get the transcript
+                        outputDiv.textContent = transcript; // Display the transcript
+                    };
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

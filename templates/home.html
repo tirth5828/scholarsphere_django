@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/home/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home/index.css' %}" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+  </head>
+
+  <body>
+    <div class="home-2">
+      <div class="frame-parent">
+        <div class="frame-child"></div>
+        <div class="scholarsphere-parent">
+          <h1 class="scholarsphere" id="text">ScholarSphere</h1>
+          <div class="nav-menu">
+            <button class="home-button" id="home">Home</button>
+            <a href="{% url 'calender' username %}">
+              <button class="home-button" id="calendar">Calendar</button>
+            </a>
+            <a href="{% url 'profile' username %}">
+              <button class="home-button" id="profile">Profile</button>
+            </a>
+          </div>
+        </div>
+        <img class="logo-icon" alt="" src="{% static 'public/logo@2x.png' %}" />
+
+        <div class="dashboard">
+          <div class="img">
+            <div class="img-child"></div>
+            <div class="presence">Presence</div>
+            <div class="div">89%</div>
+          </div>
+          <div class="img1">
+            <div class="img-child"></div>
+            <div class="div1">100%</div>
+            <div class="completeness">Completeness</div>
+          </div>
+          <div class="img">
+            <div class="img-child"></div>
+            <div class="presence">Total Subject</div>
+            <div class="div2">12</div>
+          </div>
+          <div class="img">
+            <div class="img-child"></div>
+            <div class="presence">Assigments</div>
+            <div class="div3">18</div>
+          </div>
+        </div>
+        <div class="focous_mode">
+          <div class="focus-button">
+            <div class="button-large" id="timer">Focus Mode</div>
+          </div>
+          <button class="pause-button" id="pause">
+            <img
+              class="button-icon"
+              alt=""
+              src="{% static 'public/button.svg' %}"
+            />
+          </button>
+          <button class="play-button" id="play">
+            <img
+              class="play-button-icon"
+              alt=""
+              src="{% static '/public/playbutton.svg' %}"
+            />
+          </button>
+          <button class="reset-button" id="reset">
+            <img
+              class="vector-icon"
+              alt=""
+              src="{% static 'public/RESET BUTTON.svg' %}"
+            />
+          </button>
+        </div>
+        <div class="options">
+          <button class="exam-button" id="examButton">
+            <div class="button-exam">
+              <div class="rectangle-parent">
+                <div class="group-child"></div>
+                <img
+                  class="fi-sr-book-alt-icon"
+                  alt=""
+                  src="{% static '/public/fisrbookalt.svg'%}"
+                />
+              </div>
+              <div class="exam-mode">
+                <p class="exam">Exam</p>
+                <p class="exam">Mode</p>
+              </div>
+            </div>
+          </button>
+
+          <div class="subjects-button">
+            <a href="{% url 'subjects' username %}">
+              <div class="button-subject">
+                <button class="rectangle-group">
+                  <div class="group-child"></div>
+                  <img
+                    class="fi-sr-book-alt-icon"
+                    alt=""
+                    src="{% static 'public/fisrbookalt.svg'%}"
+                  />
+
+                  <div class="rectangle-container">
+                    <div class="group-inner"></div>
+                    <img
+                      class="fi-sr-book-alt-icon"
+                      alt=""
+                      src="{% static 'public/fisrgraduationcap.svg'%}"
+                    />
+                  </div>
+                </button>
+                <div class="subjects">Subjects</div>
+              </div>
+            </a>
+          </div>
+
+          <button class="exam-button" id="appLockButton">
+            <div class="button-exam">
+              <div class="rectangle-parent">
+                <div class="group-child"></div>
+                <div class="rectangle-container">
+                  <div class="group-child2"></div>
+                  <img
+                    class="vector-icon1"
+                    alt=""
+                    src="{% static 'public/vector.svg'%}"
+                  />
+                </div>
+              </div>
+              <div class="exam-mode">
+                <p class="exam">App</p>
+                <p class="exam">Lock</p>
+              </div>
+            </div>
+          </button>
+          <a href="{% url 'deaf' username %}">
+            <button class="exam-button" id="deafModeButton">
+              <div class="button-exam">
+                <div class="rectangle-parent">
+                  <div class="group-child"></div>
+                  <div class="rectangle-container">
+                    <div class="group-child4"></div>
+                    <img
+                      class="fi-sr-book-alt-icon"
+                      alt=""
+                      src="{% static 'public/fisrcheckbox.svg'%}"
+                    />
+                  </div>
+                </div>
+                <div class="exam-mode">
+                  <p class="exam">Deaf</p>
+                  <p class="exam">Mode</p>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="text">
+        <div class="title-name">
+          <h1 class="hi-student" id="hi stu">Hi, {{name}}</h1>
+          <div class="here-is-your">Here is your activity today,</div>
+        </div>
+      </div>
+      <img class="image-icon" alt="" src="{% static 'public/image@2x.png'%}" />
+    </div>
+  </body>
+  <script>
+    let timer;
+    let timeLeft = 15 * 60; // 15 minutes in seconds
+
+    function startTimer() {
+      timer = setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      document.getElementById("timer").innerText = `${minutes}:${
+        seconds < 10 ? "0" : ""
+      }${seconds}`;
+      timeLeft--;
+
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        alert("Time is up!");
+      }
+    }
+
+    document.getElementById("play").addEventListener("click", () => {
+      startTimer();
+    });
+
+    document.getElementById("pause").addEventListener("click", () => {
+      clearInterval(timer);
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+      clearInterval(timer);
+      timeLeft = 15 * 60;
+      document.getElementById("timer").innerText = "Focus Mode";
+    });
+  </script>
+</html>

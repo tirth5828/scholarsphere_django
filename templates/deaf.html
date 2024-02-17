@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/deaf/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/deaf/index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <title>ScholarSphere</title>
+    <link rel="icon" href="{% static 'public/logo@2x.png' %}" type="image/png">
+  </head>
+  <body>
+    <div class="deaf-mode">
+      <!-- Wrap the arrow image with an anchor tag -->
+      <a href="{% url 'home' username %}">
+        <img
+          class="arrow-button-icon"
+          alt=""
+          src="{% static 'public/arrowbutton.svg' %}"
+        />
+      </a>
+
+      <div class="deaf-mode1">Deaf Mode</div>
+
+      <img
+        class="mic-button-icon"
+        id="startRecording"
+        alt=""
+        src="{% static 'public/mic-button.svg' %}"
+      />
+
+      <div class="input" id="output" type="text"></div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const startRecordingButton = document.getElementById("startRecording");
+      const outputDiv = document.getElementById("output");
+      let recognition = null;
+
+      startRecordingButton.addEventListener("click", async () => {
+        try {
+          recognition = new window.webkitSpeechRecognition(); // Create SpeechRecognition object
+          recognition.lang = "en-US"; // Set language to English (change as needed)
+          recognition.continuous = true; // Continuous speech recognition
+          recognition.interimResults = true; // Provide interim results
+          recognition.start(); // Start recording
+
+          recognition.onresult = (event) => {
+            let transcript = "";
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+              if (event.results[i].isFinal) {
+                transcript += event.results[i][0].transcript;
+              }
+            }
+            outputDiv.textContent = transcript; // Display the transcript
+          };
+
+          recognition.onend = () => {
+            // Restart recognition when it ends
+            recognition.start();
+          };
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      });
+
+      // Stop recording when the button is clicked again
+      startRecordingButton.addEventListener("dblclick", () => {
+        if (recognition && recognition.abort) {
+          recognition.abort();
+        }
+      });
+    });
+  </script>
+</html>
